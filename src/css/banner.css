@@ -1,0 +1,40 @@
+/* banner.css */
+
+/* Default image styles */
+.banner-image {
+  max-width: 100% !important;
+  object-fit: contain !important;
+  height: auto !important;
+}
+
+/* Media query for 900px to 1200px */
+@media (min-width: 900px) and (max-width: 1200px) {
+  .banner-image {
+    height: 500px !important; /* Apply custom height for this range */
+  }
+}
+/* Larger screens */
+@media (min-width: 1200px) and (max-width: 1536px) {
+  .banner-image {
+    height: 400px !important; /* Default height for large screens */
+  }
+  .banner-image-big {
+    height: 450px !important; /* Default height for large screens */
+  }
+}
+@media (min-width: 1536px) {
+  .banner-image {
+    height: 500px !important;
+    width: 500px !important;
+  }
+  .banner-image-big {
+    height: 550px !important; /* Default height for large screens */
+  }
+}
+
+.cloud-box {
+  display: inline;
+  object-fit: "cover";
+  background-size: "cover";
+  position: "absolute";
+}

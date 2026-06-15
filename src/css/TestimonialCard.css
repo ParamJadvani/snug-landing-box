@@ -1,0 +1,39 @@
+/* Forward Transition */
+.quote-forward-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.quote-forward-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+.quote-forward-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+.quote-forward-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+/* Backward Transition */
+.quote-backward-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.quote-backward-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+.quote-backward-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+.quote-backward-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
